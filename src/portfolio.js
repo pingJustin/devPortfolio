@@ -1,9 +1,10 @@
-import aboutpic from "./components/Access/WorkProfilePic6_.jpg"
+import { Link } from "react-router-dom"
+import aboutpic from "./assets/WorkProfilePic.jpg"
 
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://github.com/pingJustin/',
-  title: 'JS.',
+  homepage: '/',
+  title: 'Justin Kelley',
 }
 
 const about = {
@@ -12,11 +13,12 @@ const about = {
   name: 'Justin Kelley',
   role: 'Full stack developer',
   description:
-    'UCF bootcamp student living in Orlando, Florida. highly interested in cutting edge technology, web development and Java back end development.',
+    'UCF bootcamp student living in Orlando, Florida. Highly interested in cutting edge technology, web development and Java back end development.',
   resume: 'https://drive.google.com/file/d/1P8jZLmcUI93h7aGQ_jbFXEfI6fsIGkSw/view?usp=drive_link',
   social: {
     linkedin: 'https://www.linkedin.com/in/linkjustinkelley/',
     github: 'https://github.com/pingjustin',
+    stackoverflow: 'https://stackoverflow.com/users/30162195/pingjustin',
   },
 }
 
@@ -45,6 +47,30 @@ const projects = [
     sourceCode: 'https://github.com/pingJustin/employeeTracker',
     livePreview: '',
   },
+  {
+    name: 'Placeholder',
+    description:
+      'Placeholder description',
+    stack: ['Placeholder stack'],
+    sourceCode: 'https://github.com/pingJustin',
+    livePreview: '',
+  },
+  {
+    name: 'Placeholder',
+    description:
+      'Placeholder description',
+    stack: ['Placeholder stack'],
+    sourceCode: 'https://github.com/pingJustin',
+    livePreview: '',
+  },
+  {
+    name: 'Placeholder',
+    description:
+      'Placeholder description',
+    stack: ['Placeholder stack'],
+    sourceCode: 'https://github.com/pingJustin',
+    livePreview: '',
+  },
 ]
 
 const skills = [
@@ -70,7 +96,13 @@ const skills = [
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'hcc780921@gmail.com',
+  email: 'pingjustin@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+const social = {
+  linkedin: 'https://www.linkedin.com/in/linkjustinkelley',
+  github: 'https://github.com/pingjustin',
+  stack: 'https://stackoverflow.com/users/30162195/pingjustin',
+}
+
+export { header, about, projects, skills, contact, social }

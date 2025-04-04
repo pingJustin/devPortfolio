@@ -6,6 +6,30 @@
   justify-content: space-between;
 }
 
+/* Header title link styling */
+.header__link {
+  color: var(--clr-primary);  /* Default blue color */
+  text-decoration: none;
+  position: relative;
+}
+
+/* Remove underline but keep hover color change */
+.no-underline:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: var(--clr-primary);
+}
+
+/* Remove after pseudo-element */
+.no-underline::after {
+  content: none !important;
+}
+
+/* Restore nav link colors */
+.nav__list .link--nav {
+  color: var(--clr-primary);
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;

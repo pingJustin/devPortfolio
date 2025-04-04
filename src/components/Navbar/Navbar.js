@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useContext, useState } from 'react'
 import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
@@ -19,39 +20,49 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
-        {projects.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#projects'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Projects
-            </a>
-          </li>
-        ) : null}
+        <li className='nav__list-item'>
+          <Link
+            to='/about'
+            onClick={toggleNavList}
+            className='link link--nav'
+          >
+            About Me
+          </Link>
+        </li>
 
-        {skills.length ? (
+        {projects.length && skills.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#skills'
+            <Link
+              to='/projects'
               onClick={toggleNavList}
               className='link link--nav'
             >
-              Skills
-            </a>
+              portfolio
+            </Link>
           </li>
         ) : null}
 
         {contact.email ? (
           <li className='nav__list-item'>
-            <a
-              href='#contact'
+            <Link
+              to='/contact'
               onClick={toggleNavList}
               className='link link--nav'
             >
               Contact
-            </a>
+            </Link>
+          </li>
+        ) : null}
+
+        {contact.email ? (
+          <li className='nav__list-item'>
+            <Link
+              to='/resume'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Resume
+            </Link>
           </li>
         ) : null}
       </ul>
