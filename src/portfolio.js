@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import aboutpic from "./assets/WorkProfilePic.jpg"
 
 const header = {
