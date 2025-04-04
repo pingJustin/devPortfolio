@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import StackOverflowIcon from '@material-ui/icons/Help' // Material-UI doesn't have a direct Stack Overflow icon
+import StackOverflowIcon from '@material-ui/icons/Help'
 import { social } from '../../portfolio'
 import './Footer.css'
 
