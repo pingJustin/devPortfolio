@@ -1,0 +1,24 @@
+.skills__list {
+  max-width: 450px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__list-item {
+  margin: 0.5em;
+}
+
+.resume__container {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.resume__button {
+  width: 100%;
+  text-align: center;
+}
