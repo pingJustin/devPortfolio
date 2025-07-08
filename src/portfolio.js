@@ -12,7 +12,7 @@ const about = {
   name: 'Justin Kelley',
   role: 'Full stack developer',
   description:
-    'A digital professional living in Orlando, Florida. Highly interested in cutting edge technology, web development and Java back end development.',
+    'A digital professional living in Orlando, Florida. Highly interested in cutting edge technology, web development and .Net/NoSQL back end development.',
   resume: 'https://drive.google.com/file/d/1P8jZLmcUI93h7aGQ_jbFXEfI6fsIGkSw/view?usp=drive_link',
   social: {
     linkedin: 'https://www.linkedin.com/in/linkjustinkelley/',
